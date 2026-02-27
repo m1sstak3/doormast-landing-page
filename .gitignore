@@ -1,0 +1,10 @@
+.DS_Store
+.vscode/
+.idea/
+Project.md
+node_modules/
+.env
+
+# Временные файлы Windows
+Thumbs.db
+desktop.ini

@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Установка межкомнатных и входных дверей в Москве за 2 часа. Гарантия 3 года. Без скрытых доплат.">
+    <title>Монтаж дверей в Москве | Гарантия 3 года | От 2 500 ₽</title>
+    <!-- Подключаем современные шрифты: Unbounded для заголовков (современный гротеск), Inter для текста -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Unbounded:wght@400;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- Навигация -->
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M4 22H20M5 22V4C5 3.44772 5.44772 3 6 3H18C18.5523 3 19 3.44772 19 4V22M14 11V13M9 11V13"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <span>DoorMast.</span>
+            </div>
+
+            <nav class="nav-links">
+                <a href="#services">Услуги</a>
+                <a href="#prices">Цены</a>
+                <a href="#calculator">Калькулятор</a>
+                <a href="#reviews">Отзывы</a>
+            </nav>
+
+            <div class="header-contact">
+                <a href="tel:+74950000000" class="phone-link">+7 (495) 000-00-00</a>
+                <button class="btn btn-outline"
+                    onclick="document.getElementById('modal').classList.add('active')">Заказать звонок</button>
+            </div>
+
+            <button class="mobile-menu-btn" aria-label="Меню">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 6H20M4 12H20M4 18H20" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Главный экран (Hero) -->
+    <section class="hero">
+        <div class="hero-bg">
+            <img src="assets/images/hero.png" alt="Современная межкомнатная дверь в интерьере" class="hero-image"
+                loading="lazy">
+            <div class="hero-overlay"></div>
+        </div>
+
+        <div class="container hero-container relative">
+            <div class="hero-content">
+                <div class="badge">📍 Работаем по всей Москве и МО</div>
+                <h1 class="hero-title">Идеальная установка дверей <span>за 2 часа</span></h1>
+                <p class="hero-subtitle">Качественный монтаж межкомнатных и входных дверей от опытных профи. Без грязи,
+                    переплат и срыва сроков.</p>
+
+                <div class="hero-features">
+                    <div class="hero-feature">
+                        <div class="feature-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                <path
+                                    d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                                    stroke="currentColor" stroke-width="2" />
+                                <path d="M12 8V12L15 15" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" />
+                            </svg>
+                        </div>
+                        Монтаж точно в срок
+                    </div>
+                    <div class="hero-feature">
+                        <div class="feature-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                <path
+                                    d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        Гарантия 3 года
+                    </div>
+                </div>
+
+                <div class="hero-actions">
+                    <button class="btn btn-primary"
+                        onclick="document.getElementById('modal').classList.add('active')">Вызвать замерщика</button>
+                    <!-- Кнопка для мобильных -->
+                    <a href="tel:+74950000000" class="btn btn-outline mobile-only-btn">Позвонить сейчас</a>
+                </div>
+            </div>
+
+            <!-- Glassmorphism Card for immediate impact -->
+            <div class="hero-glass-card hidden-mobile">
+                <div class="glass-content">
+                    <div class="glass-icon">★</div>
+                    <div class="glass-text">
+                        <strong>4.9/5</strong>
+                        <span>Средняя оценка клиентов</span>
+                    </div>
+                </div>
+                <div class="glass-content mt-4">
+                    <div class="glass-icon">⏱</div>
+                    <div class="glass-text">
+                        <strong>Сегодня</strong>
+                        <span>Ближайший выезд</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Услуги -->
+    <section id="services" class="section bg-light">
+        <div class="container">
+            <div class="section-header center">
+                <h2 class="section-title">Наши услуги</h2>
+                <p class="section-subtitle">Полный цикл работ: от точного замера до финальной уборки мусора</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-card-icon">🚪</div>
+                    <h3 class="service-card-title">Монтаж межкомнатных дверей</h3>
+                    <p class="service-card-text">Установка любых типов: распашные, раздвижные, скрытого монтажа
+                        (Invisible), книжки. Точная врезка фурнитуры.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-card-icon">🛡️</div>
+                    <h3 class="service-card-title">Монтаж входных дверей</h3>
+                    <p class="service-card-text">Надежная установка металлических дверей. Усиление проемов, заделка
+                        откосов, настройка петель и замков.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-card-icon">🚀</div>
+                    <h3 class="service-card-title">Срочный монтаж "День в день"</h3>
+                    <p class="service-card-text">Возможность выезда бригады в течение 2-3 часов после заявки. Спасаем,
+                        когда "нужно было еще вчера".</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-card-icon">📐</div>
+                    <h3 class="service-card-title">Точный замер</h3>
+                    <p class="service-card-text">Выезд инженера-замерщика с каталогами. Поможем с выбором, составим
+                        прозрачную смету без "сюрпризов".</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Цены -->
+    <section id="prices" class="section">
+        <div class="container">
+            <div class="prices-wrapper">
+                <div class="prices-content">
+                    <h2 class="section-title">Честные цены</h2>
+                    <p class="section-subtitle">Стоимость фиксируется в договоре после замера. Никаких дополнительных
+                        накруток на месте.</p>
+
+                    <ul class="prices-list">
+                        <li>
+                            <div class="price-name">Межкомнатные (стандарт)</div>
+                            <div class="price-value">от 2 500 ₽</div>
+                        </li>
+                        <li>
+                            <div class="price-name">Двери скрытого монтажа</div>
+                            <div class="price-value">от 4 000 ₽</div>
+                        </li>
+                        <li>
+                            <div class="price-name">Входные металлические</div>
+                            <div class="price-value">от 4 500 ₽</div>
+                        </li>
+                        <li>
+                            <div class="price-name">Демонтаж старой двери</div>
+                            <div class="price-value">от 500 ₽</div>
+                        </li>
+                    </ul>
+
+                    <button class="btn btn-outline mt-6"
+                        onclick="document.getElementById('modal').classList.add('active')">Подробный прайс-лист</button>
+                </div>
+                <div class="prices-image-box">
+                    <div class="price-badge-circle">
+                        <span>Гарантия</span>
+                        <strong>3 года</strong>
+                    </div>
+                    <!-- Имитация фото мастера за работой -->
+                    <div class="mock-image gradient-bg">
+                        <h3>Используем только профессиональный инструмент (Makita, Bosch)</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Калькулятор -->
+    <section id="calculator" class="section bg-dark text-white relative overflow-hidden">
+        <div class="glow-bg glow-1"></div>
+        <div class="glow-bg glow-2"></div>
+
+        <div class="container relative z-10">
+            <div class="section-header center">
+                <h2 class="section-title">Рассчитайте стоимость онлайн</h2>
+                <p class="section-subtitle opacity-80">Узнайте предварительную стоимость монтажа за 1 минуту</p>
+            </div>
+
+            <div class="calc-container glass-panel">
+                <form id="calc-form" class="calc-grid">
+                    <input type="text" name="bot_field" style="display: none;" tabindex="-1" autocomplete="off">
+                    <div class="calc-step">
+                        <label class="calc-label">Тип двери</label>
+                        <div class="radio-group">
+                            <label class="radio-card">
+                                <input type="radio" name="doorType" value="interior" data-price="2500" checked>
+                                <span class="radio-content">Межкомнатная</span>
+                            </label>
+                            <label class="radio-card">
+                                <input type="radio" name="doorType" value="exterior" data-price="4500">
+                                <span class="radio-content">Входная</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="calc-step">
+                        <label class="calc-label">Количество (шт)</label>
+                        <div class="counter-input">
+                            <button type="button" class="counter-btn" id="btn-minus">-</button>
+                            <input type="number" id="door-count" value="1" min="1" max="20" readonly>
+                            <button type="button" class="counter-btn" id="btn-plus">+</button>
+                        </div>
+                    </div>
+
+                    <div class="calc-step">
+                        <label class="calc-label">Опции</label>
+                        <label class="checkbox-wrapper">
+                            <input type="checkbox" id="urgent-install" value="1000">
+                            <span class="checkbox-custom"></span>
+                            <span class="checkbox-text">Срочный монтаж (сегодня)</span>
+                        </label>
+                    </div>
+
+                    <div class="calc-result">
+                        <div class="result-box">
+                            <span class="result-label">Итого (предварительно):</span>
+                            <span class="result-value" id="calc-total">2 500 ₽</span>
+                        </div>
+                        <input type="tel" id="calc-phone" class="form-input mt-4" placeholder="Ваш телефон для связи"
+                            required>
+                        <button type="submit" class="btn btn-primary w-full mt-4">Оставить заявку</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Преимущества и доверие -->
+    <section class="section">
+        <div class="container">
+            <div class="trust-grid">
+                <div class="trust-text">
+                    <h2 class="section-title">Почему нам доверяют москвичи?</h2>
+                    <p class="section-subtitle">Работаем официально по договору. Несем материальную ответственность за
+                        ваши двери и интерьер во время монтажа.</p>
+
+                    <ul class="check-list mt-6">
+                        <li><strong>Официально:</strong> Договор, акт выполненных работ, чек.</li>
+                        <li><strong>Чисто:</strong> Используем пылесос, убираем за собой мусор.</li>
+                        <li><strong>Профи:</strong> Гражданство РФ, стаж каждого мастера от 5 лет.</li>
+                        <li><strong>Быстро:</strong> В среднем монтаж одной двери занимает 1,5-2 часа.</li>
+                    </ul>
+                </div>
+
+                <div class="trust-warranty-card bg-primary-light">
+                    <div class="warranty-icon">🏅</div>
+                    <h3>Официальная гарантия</h3>
+                    <p>Мы уверены в качестве своих услуг, поэтому предоставляем расширенную гарантию <strong>36
+                            месяцев</strong> на все монтажные работы.</p>
+                    <div class="warranty-includes">
+                        <div>✓ Геометрия установки</div>
+                        <div>✓ Крепление короба</div>
+                        <div>✓ Работа фурнитуры</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Отзывы -->
+    <section id="reviews" class="section bg-light">
+        <div class="container">
+            <div class="section-header center">
+                <h2 class="section-title">Отзывы клиентов</h2>
+            </div>
+
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-avatar">А</div>
+                        <div class="reviewer-info">
+                            <div class="reviewer-name">Александр В.</div>
+                            <div class="review-rating">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="review-text">«Вызывал мастера на установку 3 межкомнатных дверей ProfilDoors. Приехали
+                        вовремя, сделали очень аккуратно, пылесос был с собой. Зазоры идеальные. Рекомендую!»</p>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-avatar color-2">Е</div>
+                        <div class="reviewer-info">
+                            <div class="reviewer-name">Елена Смирнова</div>
+                            <div class="review-rating">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="review-text">«Нужно было срочно поменять входную дверь после взлома. Ребята вошли в
+                        положение, приехали через 2 часа. Демонтировали старую, поставили новую. Огромное спасибо за
+                        оперативность!»</p>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-avatar color-3">Д</div>
+                        <div class="reviewer-info">
+                            <div class="reviewer-name">Дмитрий</div>
+                            <div class="review-rating">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="review-text">«Ставили скрытые двери под покраску (Invisible). Очень капризная вещь, но
+                        мастера справились на отлично. Коробка стоит мертво, нигде не торчит. Дали гарантию 3 года по
+                        договору.»</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер / Контакты -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <div class="logo">
+                    <span>DoorMast.</span>
+                </div>
+                <p class="footer-desc mt-4">Профессиональная установка дверей в Москве и Московской области.</p>
+            </div>
+
+            <div class="footer-links">
+                <h4 class="footer-title">Контакты</h4>
+                <p>Москва, Тверская ул., д. 7</p>
+                <a href="tel:+74950000000" class="footer-phone">+7 (495) 000-00-00</a>
+                <p class="text-sm mt-2">Ежедневно с 9:00 до 21:00</p>
+            </div>
+
+            <div class="footer-form-wrapper">
+                <h4 class="footer-title">Остались вопросы?</h4>
+                <form id="footer-form" class="footer-form">
+                    <input type="text" name="bot_field" style="display: none;" tabindex="-1" autocomplete="off">
+                    <input type="text" id="contact-name" class="form-input" placeholder="Ваше имя" required>
+                    <input type="tel" id="contact-phone" class="form-input mt-2" placeholder="Номер телефона" required>
+                    <textarea id="contact-msg" class="form-input mt-2" placeholder="Комментарий (необязательно)"
+                        rows="2"></textarea>
+                    <button type="submit" class="btn btn-primary w-full mt-2">Жду звонка</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-bottom container">
+            <p>&copy; 2026 DoorMast. Все права защищены.</p>
+            <a href="#">Политика конфиденциальности</a>
+        </div>
+    </footer>
+
+    <!-- Модальное окно (Попап) -->
+    <div class="modal" id="modal">
+        <div class="modal-overlay" onclick="document.getElementById('modal').classList.remove('active')"></div>
+        <div class="modal-content glass-panel">
+            <button class="modal-close" onclick="document.getElementById('modal').classList.remove('active')">✕</button>
+            <h3 class="modal-title">Вызов замерщика</h3>
+            <p class="mb-4 text-center">Оставьте номер телефона, и мы перезвоним в течение 5 минут для уточнения
+                деталей.</p>
+            <form id="modal-form">
+                <input type="text" name="bot_field" style="display: none;" tabindex="-1" autocomplete="off">
+                <input type="text" id="modal-name" class="form-input mb-4" placeholder="Как к вам обращаться?" required>
+                <input type="tel" id="modal-phone" class="form-input mb-4" placeholder="+7 (___) ___-__-__" required>
+                <button type="submit" class="btn btn-primary w-full">Отправить заявку</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Toast уведомление -->
+    <div id="toast" class="toast">Заявка успешно отправлена!</div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
