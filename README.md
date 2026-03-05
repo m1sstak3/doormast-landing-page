@@ -71,7 +71,7 @@
 
 1. Склонируйте репозиторий:
 ```bash
-git clone [https://github.com/m1sstak3/doormast-landing.git](https://github.com/m1sstak3/doormast-landing.git)
+git clone https://github.com/m1sstak3/doormast-landing.git
 cd doormast-landing
 ```
 2. Откройте файл `index.html` в любом современном браузере.
